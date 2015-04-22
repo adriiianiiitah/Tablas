@@ -12,23 +12,11 @@
         }
 
         public function calcular() {
-        	/*
-        	for($i = $this->tabla; $i < $this->numero_tablas; $i++) {
-        		for($j = $this->inicio; $j <= $this->numero_tablas; $j++) {
-        			echo "$i x $j =".($i*$j);
-        			echo "<br/>";
-        		}
-        		echo "<br/>";
-        	}*/
 
-        	//for($i = $this->tabla; $i < $this->numero_tablas; $i++) {
-        		for($i = $this->tabla, $j = $this->inicio; $j < ($this->numero_tablas + $this->inicio); $j++) {
-        			echo "$i x $j =".($i*$j);
-        			echo "<br/>";
-        		}
-        		//echo "<br/>";
-        	//}
-
+    		for($i = $this->tabla, $j = $this->inicio; $j < ($this->numero_tablas + $this->inicio); $j++) {
+    			echo "$i x $j =".($i*$j);
+    			echo "<br/>";
+    		}
         }
 	}
 
